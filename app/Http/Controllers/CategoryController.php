@@ -12,7 +12,8 @@ class CategoryController extends Controller
 {
     public function getJwtSecret() {
         return [
-            "jwt" => env("JWT_SECRET")
+            "jwt" => env("JWT_SECRET"),
+            "jwt2" => env("JWT2_SECRET")
         ];
     }
 
