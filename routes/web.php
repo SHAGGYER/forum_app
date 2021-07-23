@@ -25,6 +25,7 @@ Route::prefix('auth')->group(function () {
 });
 
 Route::prefix('categories')->group(function () {
+    Route::get("/jwt", "CategoryController@getJwtSecret");
     Route::get('/', 'CategoryController@getCats');
 });
 

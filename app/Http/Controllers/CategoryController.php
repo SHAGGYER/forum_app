@@ -10,6 +10,11 @@ use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
+    public function getJwtSecret() {
+        return [
+            "jwt" => env("JWT_SECRET")
+        ];
+    }
 
     public function getCats()
     {
